@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6089749E-ED8F-474E-B4BA-42EB36C8400B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZnlSoft.Library</RootNamespace>
+    <AssemblyName>ZnlSoft.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\AxInterop.DSOFramer.dll" />
+    <Content Include="DLL\AxInterop.PHONIC_USBLib.dll" />
+    <Content Include="DLL\DevComponents.DotNetBar.Keyboard.dll" />
+    <Content Include="DLL\DevComponents.DotNetBar.Schedule.dll" />
+    <Content Include="DLL\DevComponents.DotNetBar.SuperGrid.dll" />
+    <Content Include="DLL\DevComponents.DotNetBar2.dll" />
+    <Content Include="DLL\DevComponents.Instrumentation.dll" />
+    <Content Include="DLL\DevComponents.SuperGrid.Design.dll" />
+    <Content Include="DLL\DevComponents.TreeGX.dll" />
+    <Content Include="DLL\dsoframer.ocx" />
+    <Content Include="DLL\FastReport.Bars.dll" />
+    <Content Include="DLL\FastReport.dll" />
+    <Content Include="DLL\FastReport.Editor.dll" />
+    <Content Include="DLL\FiddlerCore4.dll" />
+    <Content Include="DLL\HtmlAgilityPack.dll" />
+    <Content Include="DLL\icErp.Chart.dll" />
+    <Content Include="DLL\icErp.CLR.dll" />
+    <Content Include="DLL\icErp.CLR.sql" />
+    <Content Include="DLL\icErp.NPOI.dll" />
+    <Content Include="DLL\icErp.Utility.dll" />
+    <Content Include="DLL\icErp.WWF.dll" />
+    <Content Include="DLL\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLL\Interop.DSOFramer.dll" />
+    <Content Include="DLL\Interop.PHONIC_USBLib.dll" />
+    <Content Include="DLL\Interop.SHDocVw.dll" />
+    <Content Include="DLL\log4net.dll" />
+    <Content Include="DLL\LumiSoft.Net.dll" />
+    <Content Include="DLL\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="DLL\MySoft.Data.dll" />
+    <Content Include="DLL\NVelocity.dll" />
+    <Content Include="DLL\NVelocity.xml" />
+    <Content Include="DLL\phonic_usb.ocx" />
+    <Content Include="DLL\phonic_utoolI.dll" />
+    <Content Include="DLL\TMC.dll" />
+    <Content Include="DLL\guarantee.ico" />
+    <Content Include="DLL\Ionic.Zip.dll" />
+    <Content Include="DLL\NetSpell.SpellChecker.dll" />
+    <Content Include="DLL\Newtonsoft.Json.dll" />
+    <Content Include="DLL\OpenPop.dll" />
+    <Content Include="DLL\phonic_2Line\phonic_ubox.dll" />
+    <Content Include="DLL\phonic_2Line\phonic_utool.dll" />
+    <Content Include="DLL\phonic_2Line\phonic_utoolI.dll" />
+    <Content Include="DLL\phonic_2Line\phonic_utoolII.dll" />
+    <Content Include="DLL\phonic_ubox.dll" />
+    <Content Include="DLL\phonic_utool.dll" />
+    <Content Include="DLL\phonic_utoolII.dll" />
+    <Content Include="DLL\Update.exe" />
+    <Content Include="DLL\WinHtmlEditor.dll" />
+    <Content Include="DLL\Xilium.CefGlue.dll" />
+    <Content Include="DLL\ZedGraph.dll" />
+    <Content Include="DLL\ZNLCRM.Client.Entry.dll" />
+    <Content Include="DLL\znlerp.ico" />
+    <Content Include="DLL\ZNLFrame.DB.dll" />
+    <Content Include="DLL\ZNLFrame.Entity.dll" />
+    <Content Include="DLL\ZNLFrame.Entry.dll" />
+    <Content Include="DLL\ZnlSocketServer.dll" />
+    <Content Include="DLL\ZnlSoft.CefGlue.dll" />
+    <Content Include="DLL\ZnlSoft.DSC.Client.dll" />
+    <Content Include="DLL\ZnlSoft.DSC.ClientEntry.dll" />
+    <Content Include="DLL\ZnlSoft.DSC.Entity.dll" />
+    <Content Include="DLL\ZnlSoft.Frame.Entity.dll" />
+    <Content Include="DLL\ZnlSoft.Utility.dll" />
+    <Content Include="DLL\ZnlSoft.Addons.dll" />
+    <Content Include="引用说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content.zip" />
+    <None Include="DLL\CefBrowser.zip" />
+    <None Include="DLL\ubox.ini" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

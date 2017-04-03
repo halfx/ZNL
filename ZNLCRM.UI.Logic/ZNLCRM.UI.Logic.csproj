@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53420165-9DBD-494D-9783-045F5E142673}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZNLCRM.UI.Logic</RootNamespace>
+    <AssemblyName>ZNLCRM.UI.Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.5.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ZnlSoft.Library\DLL\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\ZnlSoft.Library\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySoft.Data">
+      <HintPath>..\ZnlSoft.Library\DLL\MySoft.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinHtmlEditor">
+      <HintPath>..\ZnlSoft.Library\DLL\WinHtmlEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="ZNLCRM.Client.Entry, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ZnlSoft.Library\DLL\ZNLCRM.Client.Entry.dll</HintPath>
+    </Reference>
+    <Reference Include="ZNLFrame.Entity">
+      <HintPath>..\ZnlSoft.Library\DLL\ZNLFrame.Entity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppHandler\SearchAssembleHandler.cs" />
+    <Compile Include="BaseLogic.cs" />
+    <Compile Include="Common\frmBaseEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmBaseEditForm.Designer.cs">
+      <DependentUpon>frmBaseEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmBaseForm.Designer.cs">
+      <DependentUpon>frmBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmBaseManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmBaseManageForm.Designer.cs">
+      <DependentUpon>frmBaseManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmBaseViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmBaseViewForm.Designer.cs">
+      <DependentUpon>frmBaseViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmSelectForm.Designer.cs">
+      <DependentUpon>frmSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ucBaseUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\ucBaseUserControl.Designer.cs">
+      <DependentUpon>ucBaseUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\CRM_CompanyContactLogic.cs" />
+    <Compile Include="CRM\CRM_CompanyLogic.cs" />
+    <Compile Include="CRM\CRM_VisitPlanLineLogic.cs" />
+    <Compile Include="CRM\CRM_VisitPlanLogic.cs" />
+    <Compile Include="CRM\CRM_ZoneLogic.cs" />
+    <Compile Include="FIN\FIN_CashBankAccountLogic.cs" />
+    <Compile Include="FIN\FIN_CashBankJournalLogic.cs" />
+    <Compile Include="FIN\FIN_SubmitExpenseLineLogic.cs" />
+    <Compile Include="FIN\FIN_SubmitExpenseLogic.cs" />
+    <Compile Include="HR\CRM_JobMastLogic.cs" />
+    <Compile Include="HR\HR_DepartmentLogic.cs" />
+    <Compile Include="HR\HR_EmployeeLogic.cs" />
+    <Compile Include="HR\HR_OrgLogic.cs" />
+    <Compile Include="PPM\ORD_PurchaseOrderLineLogic.cs" />
+    <Compile Include="PPM\ORD_PurchaseOrderLogic.cs" />
+    <Compile Include="PPM\ORD_PurchaseReturnLineLogic.cs" />
+    <Compile Include="PPM\ORD_PurchaseReturnLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportTool\ReportLogic.cs" />
+    <Compile Include="SPM\ORD_PurchaseNoticeLogic.cs" />
+    <Compile Include="SPM\ORD_SalesOrderLineLogic.cs" />
+    <Compile Include="SPM\ORD_SalesOrderLogic.cs" />
+    <Compile Include="SPM\ORD_SalesReturnLineLogic.cs" />
+    <Compile Include="SPM\ORD_SalesReturnLogic.cs" />
+    <Compile Include="STK\STK_InLineLogic.cs" />
+    <Compile Include="STK\STK_InLogic.cs" />
+    <Compile Include="STK\STK_OutLineLogic.cs" />
+    <Compile Include="STK\STK_OutLogic.cs" />
+    <Compile Include="STK\STK_StockReserveLogic.cs" />
+    <Compile Include="Sys\Common.cs" />
+    <Compile Include="Sys\FormLoadLogic.cs" />
+    <Compile Include="Sys\GridUserSetting.cs" />
+    <Compile Include="Sys\Sys_AttachFilesLogic.cs" />
+    <Compile Include="Sys\SYS_CredentialCodeRuleLogic.cs" />
+    <Compile Include="Sys\SYS_CurrencyLogic.cs" />
+    <Compile Include="Sys\SYS_DictItemLineLogic.cs" />
+    <Compile Include="Sys\SYS_DictItemLogic.cs" />
+    <Compile Include="Sys\Sys_EmpDataRightLogic.cs" />
+    <Compile Include="Sys\Sys_EmpRightLogic.cs" />
+    <Compile Include="Sys\Sys_FormRightLogic.cs" />
+    <Compile Include="Sys\SYS_ManageLogic.cs" />
+    <Compile Include="Sys\Sys_MenuLogic.cs" />
+    <Compile Include="Sys\Sys_ModuleLogic.cs" />
+    <Compile Include="Sys\Sys_RoleLogic.cs" />
+    <Compile Include="Sys\Sys_RoleRightLogic.cs" />
+    <Compile Include="Sys\Sys_RootDirMappingLogic.cs" />
+    <Compile Include="STK\STK_StockLogic.cs" />
+    <Compile Include="STK\STK_StockSheetLogic.cs" />
+    <Compile Include="STK\STK_StockTtlLogic.cs" />
+    <Compile Include="Account\UserLogic.cs" />
+    <Compile Include="WF\frmAuditRecordList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\frmAuditRecordList.Designer.cs">
+      <DependentUpon>frmAuditRecordList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WF\WF_AuditRecordLogic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZNLCRM.Controls\ZNLCRM.Controls.csproj">
+      <Project>{AC6F72CE-E679-4BDB-85CE-4CF66494D264}</Project>
+      <Name>ZNLCRM.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZNLCRM.Entity\ZNLCRM.Entity.csproj">
+      <Project>{36CA9826-09E7-4136-A6F7-9B914270B7F9}</Project>
+      <Name>ZNLCRM.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZNLCRM.Utility\ZNLCRM.Utility.csproj">
+      <Project>{c9891664-aafe-46e3-8282-2158108449f9}</Project>
+      <Name>ZNLCRM.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\frmBaseForm.resx">
+      <DependentUpon>frmBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\frmAuditRecordList.resx">
+      <DependentUpon>frmAuditRecordList.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20130505030915415_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4939_finished-work.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

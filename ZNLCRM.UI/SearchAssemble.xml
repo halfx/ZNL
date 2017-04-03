@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+<class Name="ZNLCRM.UI.PPM.frmPurchaseManage">
+  <panel Name="panDtlWhere" >
+    <con Name="txdBillNo" CHName="采购单号"  Type="textbox" DefaultValue=""/>
+    <con Name="txdStartPODate" CHName="采购日期(起)"  Type="dateinput" DefaultValue="[LastYear]" Width="110"/>
+    <con Name="txdEndPODate" CHName="采购日期(至)"  Type="dateinput" DefaultValue="[Now]" Width="110"/>
+    <con Name="txdModel" CHName="型号"  Type="textbox" />
+    <con Name="txdBrand" CHName="品牌"  Type="textbox" />
+    <con Name="txdBuyerName" CHName="采购人员"  Type="textbox" DataType="EmployeSelect" IsMuti="true" IDConName="txdBuyIDs"  Width="110" />
+    <con Name="txdStatus" CHName="审核状态"  Type="dropdownlist" DefaultValue="" ListValue="New,待提交;Approve,待审核;Complete,审核完成"/>
+    <con Name="txdStkInStatus" CHName="入库状态"  Type="dropdownlist" DefaultValue="" ListValue="待入库,待入库;部份入库,部份入库;全部出库,全部入库"/>
+    <con Name="txdHasTaxRate" CHName="含税否"  Type="dropdownlist" DefaultValue="" ListValue="False,否;True,是" />
+  </panel>
+  <panel Name="panMastWhere" >
+    <con Name="txmBillNo" CHName="采购单号"  Type="textbox" DefaultValue=""/>
+    <con Name="txmStartPODate" CHName="采购日期(起)"  Type="dateinput" DefaultValue="[LastYear]" Width="110"/>
+    <con Name="txmEndPODate" CHName="采购日期(至)"  Type="dateinput" DefaultValue="[Now]" Width="110"/>
+    <con Name="txdPurOrgName" CHName="采购机构"  Type="dropdownlist" DefaultValue=""  />
+    <con Name="txdPurDeptName" CHName="采购部门"  Type="dropdownlist" DefaultValue=""  />
+    <con Name="txmBuyerName" CHName="采购人员"  Type="textbox" DataType="EmployeSelect" IsMuti="true" IDConName="txdBuyIDs" Width="110"  />
+    <con Name="txdSupplierName" CHName="供应商名称"  Type="textbox" DefaultValue=""  Width="130"  />
+    <con Name="txdStartNeedPayAmtDate" CHName="需付款日期(起)"  Type="dateinput" DefaultValue="" Width="110"/>
+    <con Name="txdEndNeedPayAmtDate" CHName="需付款日期(至)"  Type="dateinput" DefaultValue="" Width="110"/>
+    <con Name="txdStartNeedDeliveryDate" CHName="需到货日期(起)"  Type="dateinput" DefaultValue="" Width="110"/>
+    <con Name="txdEndNeedDeliveryDate" CHName="需到货日期(至)"  Type="dateinput" DefaultValue="" Width="110"/>
+  </panel>
+</class>
+  
+<class Name="ZNLCRM.UI.STK.frmStkInManage">
+    <panel Name="panDtlWhere" >
+      <con Name="txdBillNo" CHName="入库单号"  Type="textbox" DefaultValue=""/>
+      <con Name="txdBillType" CHName="订单类型"  Type="textbox" DefaultValue=""/>
+    </panel>
+    <panel Name="panMastWhere" >
+      <con Name="txmBillNo" CHName="入库单号"  Type="textbox" DefaultValue=""/>
+      <con Name="txmBillType" CHName="订单类型"  Type="textbox" DefaultValue=""/>
+    </panel>
+  </class>
+  
+<class Name="ZNLCRM.UI.HR.frmJobManage">
+  <panel Name="panTop" >
+    <con Name="txdBillNo" CHName="报告单号"  Type="textbox" DefaultValue=""/>
+    <con Name="txtJobName" CHName="报告标题"  Type="textbox" DefaultValue=""/>
+    <con Name="txtJobDateS" CHName="采购日期(起)"  Type="dateinput" DefaultValue="[LastYear]" />
+    <con Name="txtJobDateE" CHName="采购日期(至)"  Type="dateinput" DefaultValue="[Now]" />
+    <con Name="txtBelongEmpNames" CHName="员工"  Type="textbox" DataType="EmployeSelect" IsMuti="true" IDConName="txtBelongEmpIDs"   />
+    <con Name="cmbJobType" CHName="报告类型"  Type="dropdownlist" DefaultValue="" TableName="SYS_DictItem" CodeValue="JobType" />
+  </panel>
+</class>
+</root>

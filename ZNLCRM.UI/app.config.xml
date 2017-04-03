@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+  </configSections>
+  <connectionStrings>
+    <add name="i_SqlConnectionString_local" connectionString="2D3ATQqDO1y+7aSF0NAc7by1JIN3vG1Qy3R8feycKW2MukTgasvKEHm9PHf00P9hXdDzeEBmAw2k1qbQkm4GNFQQB5wffG4TQMgDyWeFjlc4AQP+grk+9g08KK/5NGrao6nKQj1jlncluuETpHY9GMEtNJgDuAV30n49taQicmRGDSmla4mFbIy0/96Zf2p0zBIxxdOrk8w=" />
+    <add name="i_SqlConnectionString_meibu" connectionString="2D3ATQqDO1y+7aSF0NAc7by1JIN3vG1Qy3R8feycKW2MukTgasvKEHm9PHf00P9hXdDzeEBmAw2k1qbQkm4GNFQQB5wffG4TQMgDyWeFjlc4AQP+grk+9g08KK/5NGrao6nKQj1jlncluuETpHY9GMEtNJgDuAV30n49taQicmRGDSmla4mFbIy0/96Zf2p0zBIxxdOrk8w=" />
+    <add name="UpdateServerSqlConnectionString" connectionString="2D3ATQqDO1y+7aSF0NAc7by1JIN3vG1Qy3R8feycKW2MukTgasvKEHm9PHf00P9hXdDzeEBmAw2k1qbQkm4GNFQQB5wffG4TQMgDyWeFjlc4AQP+grk+9g08KK/5NGrao6nKQj1jlncluuETpHY9GMEtNJgDuAV30n49taQicmRGDSmla4mFbIy0/96Zf2p0zBIxxdOrk8w=" />
+    <add name="IPSqlConnectionString" connectionString="lDLN5C1T1xPswyFfR/C37by1JIN3vG1Qy3R8feycKW2MukTgasvKUh+81WVBMumUGKbvcEgVvz+7gwL4OhdcRwbxiUvf8B0DGmxhdaNeVfwynfjTh3mSdnOBda1UuIphH6TMl5Ku52DD84ZwR8rT3LnxChk+ocMUeFyniORPHW8A8A0YFXD/A9QRPIMQrw14Cinizf/NE0Y=" />
+  </connectionStrings>
+  
+</configuration>

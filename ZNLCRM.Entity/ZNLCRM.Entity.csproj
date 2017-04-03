@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36CA9826-09E7-4136-A6F7-9B914270B7F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZNLCRM.Entity</RootNamespace>
+    <AssemblyName>ZNLCRM.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySoft.Data">
+      <HintPath>..\ZnlSoft.Library\DLL\MySoft.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZNLFrame.Entity">
+      <HintPath>..\ZnlSoft.Library\DLL\ZNLFrame.Entity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBModel\Account\SYS_ChargeRecord.cs" />
+    <Compile Include="DBModel\Account\SYS_CompanyInfo.cs" />
+    <Compile Include="DBModel\Account\SYS_SignLogInfo.cs" />
+    <Compile Include="DBModel\Account\SYS_UserAccount.cs" />
+    <Compile Include="DBModel\CRM\CRM_Company.cs" />
+    <Compile Include="DBModel\CRM\CRM_CompanyContact.cs" />
+    <Compile Include="DBModel\CRM\CRM_JobLine.cs" />
+    <Compile Include="DBModel\CRM\CRM_JobMast.cs" />
+    <Compile Include="DBModel\CRM\CRM_VisitPlan.cs" />
+    <Compile Include="DBModel\CRM\CRM_VisitPlanLine.cs" />
+    <Compile Include="DBModel\CRM\CRM_Zone.cs" />
+    <Compile Include="DBModel\FIN\FIN_CashBankAccount.cs" />
+    <Compile Include="DBModel\FIN\FIN_CashBankJournal.cs" />
+    <Compile Include="DBModel\FIN\FIN_SubmitExpense.cs" />
+    <Compile Include="DBModel\FIN\FIN_SubmitExpenseLine.cs" />
+    <Compile Include="DBModel\HR\HR_Department.cs" />
+    <Compile Include="DBModel\HR\HR_Employee.cs" />
+    <Compile Include="DBModel\HR\HR_Org.cs" />
+    <Compile Include="DBModel\PPM\ORD_PurchaseOrder.cs" />
+    <Compile Include="DBModel\PPM\ORD_PurchaseOrderLine.cs" />
+    <Compile Include="DBModel\PPM\ORD_PurchaseReturn.cs" />
+    <Compile Include="DBModel\PPM\ORD_PurchaseReturnLine.cs" />
+    <Compile Include="DBModel\ReportTool\Sys_Report.cs" />
+    <Compile Include="DBModel\ReportTool\Sys_ReportElements.cs" />
+    <Compile Include="DBModel\ReportTool\Sys_ReportSection.cs" />
+    <Compile Include="DBModel\SPM\ORD_PurchaseNotice.cs" />
+    <Compile Include="DBModel\SPM\ORD_SalesOrder.cs" />
+    <Compile Include="DBModel\SPM\ORD_SalesOrderLine.cs" />
+    <Compile Include="DBModel\SPM\ORD_SalesReturn.cs" />
+    <Compile Include="DBModel\SPM\ORD_SalesReturnLine.cs" />
+    <Compile Include="DBModel\STK\STK_In.cs" />
+    <Compile Include="DBModel\STK\STK_InLine.cs" />
+    <Compile Include="DBModel\STK\STK_InOutLink.cs" />
+    <Compile Include="DBModel\STK\STK_Out.cs" />
+    <Compile Include="DBModel\STK\STK_OutLine.cs" />
+    <Compile Include="DBModel\STK\STK_StockPriceRange.cs" />
+    <Compile Include="DBModel\STK\STK_StockReserve.cs" />
+    <Compile Include="DBModel\Sys\SYS_Currency.cs" />
+    <Compile Include="DBModel\Sys\Sys_RootDirMapping.cs" />
+    <Compile Include="DBModel\STK\STK_Stock.cs" />
+    <Compile Include="DBModel\STK\STK_StockSheet.cs" />
+    <Compile Include="DBModel\STK\STK_StockTtl.cs" />
+    <Compile Include="DBModel\WF\WF_AuditBill.cs" />
+    <Compile Include="DBModel\WF\WF_AuditBillLine.cs" />
+    <Compile Include="DBModel\WF\WF_AuditRecord.cs" />
+    <Compile Include="DBModel\WF\WF_AuditRecordLine.cs" />
+    <Compile Include="DBModel\WF\WF_Fun.cs" />
+    <Compile Include="DBModel\WF\WF_FunLine.cs" />
+    <Compile Include="DBModel\WF\WF_Table.cs" />
+    <Compile Include="DBModel\WF\WF_TableFields.cs" />
+    <Compile Include="UserModel\Account\SYS_ChargeRecordParam.cs" />
+    <Compile Include="UserModel\Account\SYS_ChargeRecordResult.cs" />
+    <Compile Include="UserModel\Account\SYS_CompanyInfoParam.cs" />
+    <Compile Include="UserModel\Account\SYS_CompanyInfoResult.cs" />
+    <Compile Include="UserModel\Account\SYS_SignLogInfoResult.cs" />
+    <Compile Include="UserModel\Account\SYS_UserAccountParam.cs" />
+    <Compile Include="UserModel\Account\SYS_UserAccountResult.cs" />
+    <Compile Include="UserModel\CRM\CRM_VisitPlanParam.cs" />
+    <Compile Include="UserModel\CRM\CRM_VisitPlanLineParam.cs" />
+    <Compile Include="UserModel\CRM\CRM_VisitPlanLineResult.cs" />
+    <Compile Include="UserModel\CRM\CRM_VisitPlanResult.cs" />
+    <Compile Include="UserModel\FIN\FIN_CashBankAccountParam.cs" />
+    <Compile Include="DBModel\Sys\Sys_AttachFiles.cs" />
+    <Compile Include="DBModel\Sys\SYS_CredentialCodeRule.cs" />
+    <Compile Include="DBModel\Sys\SYS_DataGrid.cs" />
+    <Compile Include="DBModel\Sys\SYS_DictItem.cs" />
+    <Compile Include="DBModel\Sys\SYS_DictItemLine.cs" />
+    <Compile Include="DBModel\Sys\Sys_EmpDataRight.cs" />
+    <Compile Include="DBModel\Sys\Sys_EmpRight.cs" />
+    <Compile Include="DBModel\Sys\Sys_FormRight.cs" />
+    <Compile Include="DBModel\Sys\Sys_Menu.cs" />
+    <Compile Include="DBModel\Sys\Sys_Module.cs" />
+    <Compile Include="DBModel\Sys\Sys_RoleRight.cs" />
+    <Compile Include="DBModel\Sys\Sys_Roles.cs" />
+    <Compile Include="DBModel\Sys\Sys_Seed.cs" />
+    <Compile Include="DBModel\Sys\SYS_UserGridColIndex.cs" />
+    <Compile Include="DBModel\Sys\SYS_UserGridColName.cs" />
+    <Compile Include="DBModel\Sys\SYS_UserGridColWidth.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserModel\Common\DropGridCol.cs" />
+    <Compile Include="UserModel\Common\SysEnum.cs" />
+    <Compile Include="UserModel\Common\WCFResult.cs" />
+    <Compile Include="UserModel\CRM\CRM_CompanyContactParam.cs" />
+    <Compile Include="UserModel\CRM\CRM_CompanyContactResult.cs" />
+    <Compile Include="UserModel\CRM\CRM_CompanyParam.cs" />
+    <Compile Include="UserModel\CRM\CRM_CompanyResult.cs" />
+    <Compile Include="UserModel\CRM\CRM_ZoneParam.cs" />
+    <Compile Include="UserModel\CRM\CRM_ZoneResult.cs" />
+    <Compile Include="UserModel\FIN\FIN_CashBankAccountResult.cs" />
+    <Compile Include="UserModel\FIN\FIN_CashBankJournalParam.cs" />
+    <Compile Include="UserModel\FIN\FIN_CashBankJournalResult.cs" />
+    <Compile Include="UserModel\FIN\FIN_SubmitExpenseLineParam.cs" />
+    <Compile Include="UserModel\FIN\FIN_SubmitExpenseLineResult.cs" />
+    <Compile Include="UserModel\FIN\FIN_SubmitExpenseParam.cs" />
+    <Compile Include="UserModel\FIN\FIN_SubmitExpenseResult.cs" />
+    <Compile Include="UserModel\HR\HR_DepartmentParam.cs" />
+    <Compile Include="UserModel\HR\HR_DepartmentResult.cs" />
+    <Compile Include="UserModel\HR\HR_EmployeeParam.cs" />
+    <Compile Include="UserModel\HR\HR_EmployeeResult.cs" />
+    <Compile Include="UserModel\HR\HR_OrgParam.cs" />
+    <Compile Include="UserModel\HR\HR_OrgResult.cs" />
+    <Compile Include="UserModel\PPM\ORD_PurchaseOrderLineParam.cs" />
+    <Compile Include="UserModel\PPM\ORD_PurchaseOrderLineResult.cs" />
+    <Compile Include="UserModel\PPM\ORD_PurchaseOrderParam.cs" />
+    <Compile Include="UserModel\PPM\ORD_PurchaseOrderResult.cs" />
+    <Compile Include="UserModel\PPM\ORD_PurchaseReturnLineParam.cs" />
+    <Compile Include="UserModel\PPM\ORD_PurchaseReturnLineResult.cs" />
+    <Compile Include="UserModel\PPM\ORD_PurchaseReturnParam.cs" />
+    <Compile Include="UserModel\PPM\ORD_PurchaseReturnResult.cs" />
+    <Compile Include="UserModel\ReportTool\Sys_ReportElementsResult.cs" />
+    <Compile Include="UserModel\ReportTool\Sys_ReportParam.cs" />
+    <Compile Include="UserModel\ReportTool\Sys_ReportResult.cs" />
+    <Compile Include="UserModel\ReportTool\Sys_ReportSectionResult.cs" />
+    <Compile Include="UserModel\SPM\ORD_PurchaseNoticeParam.cs" />
+    <Compile Include="UserModel\SPM\ORD_PurchaseNoticeResult.cs" />
+    <Compile Include="UserModel\SPM\ORD_SalesOrderLineParam.cs" />
+    <Compile Include="UserModel\SPM\ORD_SalesOrderLineResult.cs" />
+    <Compile Include="UserModel\SPM\ORD_SalesOrderParam.cs" />
+    <Compile Include="UserModel\SPM\ORD_SalesOrderResult.cs" />
+    <Compile Include="UserModel\SPM\ORD_SalesReturnLineParam.cs" />
+    <Compile Include="UserModel\SPM\ORD_SalesReturnLineResult.cs" />
+    <Compile Include="UserModel\SPM\ORD_SalesReturnParam.cs" />
+    <Compile Include="UserModel\SPM\ORD_SalesReturnResult.cs" />
+    <Compile Include="UserModel\STK\STK_InLineParam.cs" />
+    <Compile Include="UserModel\STK\STK_InLineResult.cs" />
+    <Compile Include="UserModel\STK\STK_InOutLinkParam.cs" />
+    <Compile Include="UserModel\STK\STK_InOutLinkResult.cs" />
+    <Compile Include="UserModel\STK\STK_InParam.cs" />
+    <Compile Include="UserModel\STK\STK_InResult.cs" />
+    <Compile Include="UserModel\STK\STK_OutLineParam.cs" />
+    <Compile Include="UserModel\STK\STK_OutLineResult.cs" />
+    <Compile Include="UserModel\STK\STK_OutParam.cs" />
+    <Compile Include="UserModel\STK\STK_OutResult.cs" />
+    <Compile Include="UserModel\STK\STK_StockPriceRangeParam.cs" />
+    <Compile Include="UserModel\STK\STK_StockPriceRangeResult.cs" />
+    <Compile Include="UserModel\STK\STK_StockReserveParam.cs" />
+    <Compile Include="UserModel\STK\STK_StockReserveResult.cs" />
+    <Compile Include="UserModel\Sys\FormLoadParam.cs" />
+    <Compile Include="UserModel\Sys\FormLoadResult.cs" />
+    <Compile Include="UserModel\Sys\SYS_CurrencyParam.cs" />
+    <Compile Include="UserModel\Sys\SYS_CurrencyResult.cs" />
+    <Compile Include="UserModel\Sys\SYS_DictItemLineParam.cs" />
+    <Compile Include="UserModel\Sys\SYS_DictItemLineResult.cs" />
+    <Compile Include="UserModel\Sys\SYS_DictItemParam.cs" />
+    <Compile Include="UserModel\Sys\SYS_DictItemResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_EmpDataRightParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_EmpDataRightResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_EmpRightParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_EmpRightResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_FormRightParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_FormRightResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_ModuleParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_ModuleResult.cs" />
+    <Compile Include="UserModel\Sys\SYS_CredentialCodeRuleParam.cs" />
+    <Compile Include="UserModel\Sys\SYS_CredentialCodeRuleResult.cs" />
+    <Compile Include="UserModel\Sys\SYS_DataGridParam.cs" />
+    <Compile Include="UserModel\Sys\SYS_DataGridResult.cs" />
+    <Compile Include="UserModel\CRM\CRM_JobLineResult.cs" />
+    <Compile Include="UserModel\CRM\CRM_JobMastParam.cs" />
+    <Compile Include="UserModel\CRM\CRM_JobMastResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_AttachFilesParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_AttachFilesResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_MenuParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_MenuResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_RoleParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_RoleResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_RoleRightParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_RoleRightResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_RootDirMappingParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_RootDirMappingResult.cs" />
+    <Compile Include="UserModel\Sys\Sys_SeedParam.cs" />
+    <Compile Include="UserModel\Sys\Sys_SeedResult.cs" />
+    <Compile Include="UserModel\STK\STK_StockParam.cs" />
+    <Compile Include="UserModel\STK\STK_StockResult.cs" />
+    <Compile Include="UserModel\STK\STK_StockSheetParam.cs" />
+    <Compile Include="UserModel\STK\STK_StockSheetResult.cs" />
+    <Compile Include="UserModel\STK\STK_StockTtlParam.cs" />
+    <Compile Include="UserModel\STK\STK_StockTtlResult.cs" />
+    <Compile Include="UserModel\WF\AuditBillParam.cs" />
+    <Compile Include="UserModel\WF\WF_AuditBillLineResult.cs" />
+    <Compile Include="UserModel\WF\WF_AuditBillParam.cs" />
+    <Compile Include="UserModel\WF\WF_AuditBillResult.cs" />
+    <Compile Include="UserModel\WF\WF_AuditRecordLineParam.cs" />
+    <Compile Include="UserModel\WF\WF_AuditRecordLineResult.cs" />
+    <Compile Include="UserModel\WF\WF_AuditRecordParam.cs" />
+    <Compile Include="UserModel\WF\WF_AuditRecordResult.cs" />
+    <Compile Include="UserModel\WF\WF_FunLineResult.cs" />
+    <Compile Include="UserModel\WF\WF_FunParam.cs" />
+    <Compile Include="UserModel\WF\WF_FunResult.cs" />
+    <Compile Include="UserModel\WF\WF_TableFieldsResult.cs" />
+    <Compile Include="UserModel\WF\WF_TableParam.cs" />
+    <Compile Include="UserModel\WF\WF_TableResult.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZNLCRM.Utility\ZNLCRM.Utility.csproj">
+      <Project>{c9891664-aafe-46e3-8282-2158108449f9}</Project>
+      <Name>ZNLCRM.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

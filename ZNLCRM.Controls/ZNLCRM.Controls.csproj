@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC6F72CE-E679-4BDB-85CE-4CF66494D264}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZNLCRM.Controls</RootNamespace>
+    <AssemblyName>ZNLCRM.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid">
+      <HintPath>..\ZnlSoft.Library\DLL\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\ZnlSoft.Library\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>..\ZnlSoft.Library\DLL\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZNLFrame.Entity">
+      <HintPath>..\ZnlSoft.Library\DLL\ZNLFrame.Entity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EXWebBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadOnlyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReadOnlyTextBox.designer.cs">
+      <DependentUpon>ReadOnlyTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryControlContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBoxXCell.cs" />
+    <Compile Include="TextBoxXColumn.cs" />
+    <Compile Include="TextBoxXEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcAdTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcAdTree.Designer.cs">
+      <DependentUpon>UcAdTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcAutoCompleteGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcBlockList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcBlockList.Designer.cs">
+      <DependentUpon>UcBlockList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcButton.designer.cs">
+      <DependentUpon>UcButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcCheckBox.designer.cs">
+      <DependentUpon>UcCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcCheckBoxGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcCheckBoxGroup.designer.cs">
+      <DependentUpon>UcCheckBoxGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcComAttachedInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcComAttachedInfo.Designer.cs">
+      <DependentUpon>UcComAttachedInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcComboBox.designer.cs">
+      <DependentUpon>UcComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcDataGridView.designer.cs">
+      <DependentUpon>UcDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcDataGridViewSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcDataGridViewSummary.designer.cs">
+      <DependentUpon>UcDataGridViewSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcDateTimeInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcDateTimeInput.designer.cs">
+      <DependentUpon>UcDateTimeInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcDropDataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcDropDataGridView.Designer.cs">
+      <DependentUpon>UcDropDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcEditPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcEditPanel.Designer.cs">
+      <DependentUpon>UcEditPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcExpandableSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcExpandableSplitter.designer.cs">
+      <DependentUpon>UcExpandableSplitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcInformationBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcInformationBox.designer.cs">
+      <DependentUpon>UcInformationBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcInfoWaitting..cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcInfoWaitting..Designer.cs">
+      <DependentUpon>UcInfoWaitting..cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcIntInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcIntInput.designer.cs">
+      <DependentUpon>UcIntInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcLabel.designer.cs">
+      <DependentUpon>UcLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcLabelX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcLabelX.designer.cs">
+      <DependentUpon>UcLabelX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcLinkLabel.designer.cs">
+      <DependentUpon>UcLinkLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcPager.designer.cs">
+      <DependentUpon>UcPager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcPagerEventArgs.cs" />
+    <Compile Include="UcPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcPanel.designer.cs">
+      <DependentUpon>UcPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcPanelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcPanelEx.designer.cs">
+      <DependentUpon>UcPanelEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcRadioBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcRadioBox.Designer.cs">
+      <DependentUpon>UcRadioBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcRichBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcRichBox.Designer.cs">
+      <DependentUpon>UcRichBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcSignature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcSignature.Designer.cs">
+      <DependentUpon>UcSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcSuperGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcSuperGridControl.Designer.cs">
+      <DependentUpon>UcSuperGridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcSuperTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcSuperTabControl.Designer.cs">
+      <DependentUpon>UcSuperTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcTabControl.Designer.cs">
+      <DependentUpon>UcTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcTextBox.designer.cs">
+      <DependentUpon>UcTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcTitlePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcTitlePanel.designer.cs">
+      <DependentUpon>UcTitlePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UcToolStrip.Designer.cs">
+      <DependentUpon>UcToolStrip.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UcBlockList.resx">
+      <DependentUpon>UcBlockList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcCheckBoxGroup.resx">
+      <DependentUpon>UcCheckBoxGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcComAttachedInfo.resx">
+      <DependentUpon>UcComAttachedInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcDataGridView.resx">
+      <DependentUpon>UcDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcDropDataGridView.resx">
+      <DependentUpon>UcDropDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcEditPanel.resx">
+      <DependentUpon>UcEditPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcInformationBox.resx">
+      <DependentUpon>UcInformationBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcInfoWaitting..resx">
+      <DependentUpon>UcInfoWaitting..cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcPager.resx">
+      <DependentUpon>UcPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcSignature.resx">
+      <DependentUpon>UcSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcTitlePanel.resx">
+      <DependentUpon>UcTitlePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\returnmsg2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Infomation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Infomation32X32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\save-1.png" />
+    <None Include="Resources\org.png" />
+    <None Include="Resources\msg.png" />
+    <None Include="Resources\module.png" />
+    <None Include="Resources\menu-2.png" />
+    <None Include="Resources\menu-1.png" />
+    <None Include="Resources\import-1.png" />
+    <None Include="Resources\import.png" />
+    <None Include="Resources\Follow-up.png" />
+    <None Include="Resources\flag_2.png" />
+    <None Include="Resources\flag_1.png" />
+    <None Include="Resources\export-1.png" />
+    <None Include="Resources\export.png" />
+    <None Include="Resources\edit-2.png" />
+    <None Include="Resources\edit-1.png" />
+    <None Include="Resources\dept.png" />
+    <None Include="Resources\del-4.png" />
+    <None Include="Resources\del-31.png" />
+    <None Include="Resources\add_3.png" />
+    <None Include="Resources\add_4.png" />
+    <None Include="Resources\add-1.png" />
+    <None Include="Resources\add-2.png" />
+    <None Include="Resources\cancel-1.png" />
+    <None Include="Resources\del-1.png" />
+    <None Include="Resources\del-2.png" />
+    <Content Include="Resources\del-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZNLCRM.Entity\ZNLCRM.Entity.csproj">
+      <Project>{36ca9826-09e7-4136-a6f7-9b914270b7f9}</Project>
+      <Name>ZNLCRM.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZNLCRM.Utility\ZNLCRM.Utility.csproj">
+      <Project>{c9891664-aafe-46e3-8282-2158108449f9}</Project>
+      <Name>ZNLCRM.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
