@@ -100,7 +100,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\ZnlSoft.Library\DLL\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NgenInstaller, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
